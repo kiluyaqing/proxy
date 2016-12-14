@@ -1,0 +1,10 @@
+version: '2'
+services:
+    proxy-elasticsearch:
+        container_name: proxy-elasticsearch
+        image: elasticsearch:2.4.1
+        # volumes:
+        #     - ~/volumes/jhipster/proxy/elasticsearch/:/usr/share/elasticsearch/data/
+        ports:
+            - 9200:9200
+            - 9300:9300
